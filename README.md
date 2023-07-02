@@ -1,15 +1,15 @@
 1. Countdown Timer
 
-- design = https://uidesigndaily.com/posts/sketch-countdown-timer-day-876
--future date
--timer
+- design = https://uidesigndaily.com/posts/ sketch-countdown-timer-day-876
+- future date
+- timer
 
 2. Quiz App
 
--design = https://uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
--questions from obj
--select answer
--at the end show score
+- design = https://uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
+- questions from obj
+- select answer
+- at the end show score
 
 3. Recipe App
 
@@ -27,6 +27,7 @@
 - localStorage
 
 5. ToDo App
+
 - design = https://todomvc.com/examples/react/#/
 - CRUD todos
 - localStorage
@@ -37,6 +38,6 @@
 
 - list of movies
 - movie info
-- fav movie 
+- fav movie
 - actors
 - using api(https://developer.themoviedb.org/docs)
