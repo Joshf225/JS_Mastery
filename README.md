@@ -41,3 +41,8 @@
 - fav movie
 - actors
 - using api(https://developer.themoviedb.org/docs)
+
+7. GitHub Profiles App
+- https://uidesigndaily.com/posts/photoshop-profi1e-card-user-day-286
+- search for user
+- get and show data
