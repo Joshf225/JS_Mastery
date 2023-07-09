@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("/snow.jpg");
+  background-image: url("snow.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
