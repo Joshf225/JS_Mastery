@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <div class="display">0</div>
+      <div class="display" id="display">0</div>
       <div class="columns">
         <div class="column">
-          <span>AC</span>
-          <span>+/-</span>
-          <span>%</span>
-          <span class="blue">&#247;</span>
+          <span id="ac">AC</span>
+          <span id="minus">+/-</span>
+          <span id="percent">%</span>
+          <span class="blue" id="divide">&#247;</span>
         </div>
         <div class="column">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span class="blue">&#215;</span>
+          <span id="num-one">1</span>
+          <span id="num-two">2</span>
+          <span id="num-three">3</span>
+          <span class="blue" id="multiply">&#215;</span>
         </div>
         <div class="column">
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span class="blue">-</span>
+          <span id="num-four">4</span>
+          <span id="num-five">5</span>
+          <span id="num-six">6</span>
+          <span class="blue" id="minus">-</span>
         </div>
         <div class="column">
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span class="blue">+</span>
+          <span id="num-sev">7</span>
+          <span id="num-eight">8</span>
+          <span id="num-nine">9</span>
+          <span class="blue" id="plus">+</span>
         </div>
         <div class="last-column">
           <div class="first">
-            <span class="one">0</span>
-            <span class="two">,</span>
+            <span class="one" id="zero">0</span>
+            <span class="two" id="comma">,</span>
           </div>
           <div class="last red">
-            <span class="three">=</span>
+            <span class="three" id="equals">=</span>
           </div>
         </div>
       </div>
