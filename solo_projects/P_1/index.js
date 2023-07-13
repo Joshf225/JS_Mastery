@@ -31,90 +31,97 @@ const nine = 9;
 const zero = 0;
 
 const plus = "+";
+const minus = "-";
 const percent = "%";
 const divide = "/";
 const multiply = "*";
+const equals = "=";
+const comma = ",";
 
 let mathOp = "";
 
+let num1 = 0;
+let num2 = 0;
+
+const numList = [];
+
 function buttonSelect() {
   acEl.addEventListener("click", () => {
-    display.innerHTML = "";
-    mathOp = "";
+    numList.length = 0;
+    display.innerHTML = numList;
+    console.log(numList);
   });
   percentEl.addEventListener("click", () => {
-    mathOp += percent;
-    console.log(mathOp);
+    numList.push(percent);
+    display.innerHTML = numList;
   });
   minusEl.addEventListener("click", () => {
-    mathOp += plus;
-    console.log(mathOp);
+    numList.push(minus);
+    display.innerHTML = numList;
   });
   divideEl.addEventListener("click", () => {
-    mathOp += divide;
-    console.log(mathOp);
+    numList.push(divide);
+    display.innerHTML = numList;
   });
   multiplyEl.addEventListener("click", () => {
-    mathOp += multiply;
-    console.log(mathOp);
+    numList.push(multiply);
+    display.innerHTML = numList;
   });
   oneEl.addEventListener("click", () => {
-    display.innerHTML = one;
-    mathOp += one;
-    console.log(mathOp);
+    numList.push(one);
+    display.innerHTML = numList;
   });
   twoEl.addEventListener("click", () => {
-    display.innerHTML = two;
-    mathOp += two;
-    console.log(mathOp);
+    numList.push(two);
+    display.innerHTML = numList;
   });
   threeEl.addEventListener("click", () => {
-    display.innerHTML = three;
-    mathOp += three;
-    console.log(mathOp);
+    numList.push(three);
+    display.innerHTML = numList;
   });
-  multiplyEl.addEventListener("click", () => {});
   fourEl.addEventListener("click", () => {
-    display.innerHTML = four;
-    mathOp += four;
-    console.log(mathOp);
+    numList.push(four);
+    display.innerHTML = numList;
   });
   fiveEl.addEventListener("click", () => {
-    display.innerHTML = five;
-    mathOp += five;
-    console.log(mathOp);
+    numList.push(five);
+    display.innerHTML = numList;
   });
   sixEl.addEventListener("click", () => {
-    display.innerHTML = six;
-    mathOp += six;
-    console.log(mathOp);
+    numList.push(six);
+    display.innerHTML = numList;
   });
-  minusEl.addEventListener("click", () => {});
+  minusEl.addEventListener("click", () => {
+    numList.push(minus);
+    display.innerHTML = numList;
+  });
   sevEl.addEventListener("click", () => {
-    display.innerHTML = seven;
-    mathOp += seven;
-    console.log(mathOp);
+    numList.push(seven);
+    display.innerHTML = numList;
   });
   eightEl.addEventListener("click", () => {
-    display.innerHTML = eight;
-    mathOp += eight;
-    console.log(mathOp);
+    numList.push(eight);
+    display.innerHTML = numList;
   });
   nineEl.addEventListener("click", () => {
-    display.innerHTML = nine;
-    mathOp += nine;
-    console.log(mathOp);
+    numList.push(nine);
+    display.innerHTML = numList;
   });
-  plusEl.addEventListener("click", () => {});
+  plusEl.addEventListener("click", () => {
+    numList.push(plus);
+    display.innerHTML = numList;
+  });
   zeroEl.addEventListener("click", () => {
-    display.innerHTML = zero;
-    mathOp += zero;
-    console.log(mathOp);
+    numList.push(zero);
+    display.innerHTML = numList;
   });
-  commaEl.addEventListener("click", () => {});
+  commaEl.addEventListener("click", () => {
+    numList.push(comma);
+    display.innerHTML = numList;
+  });
   equalsEl.addEventListener("click", () => {
-    let answer = parseInt(mathOp);
-    console.log(mathOp);
+    numList.push(equals);
+    display.innerHTML = numList;
   });
 }
 
@@ -122,5 +129,4 @@ function mathOperation() {}
 
 function addToDisplay(number) {}
 
-console.log(mathOp);
 buttonSelect();

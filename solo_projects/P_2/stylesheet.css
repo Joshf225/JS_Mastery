@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #36d1dc;
+  background: -webkit-linear-gradient(to right, #5b86e5, #36d1dc);
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+header {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  min-height: 10rem;
+  margin-bottom: 3rem;
+  background-color: aliceblue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  font-size: 0.8rem;
+  color: white;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 70vh;
+  border: 2px solid black;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 40%;
+}
+
+.col-1 a {
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 0.7rem;
+  height: 2.5rem;
+  text-align: left;
+  max-width: 32rem;
+  font-size: 0.9rem;
+  box-shadow: 0px 9px 17px -11px rgba(0, 0, 0, 0.1);
+}
+
+/* .globe,
+.facebook,
+.github {
+  position: absolute;
+  left: 2rem;
+} */
