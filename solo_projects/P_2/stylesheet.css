@@ -40,25 +40,30 @@ h4 {
   flex-direction: column;
   width: 40%;
   height: 70vh;
+  align-items: center;
   border: 2px solid black;
+  position: relative;
 }
 
-.col-1 {
+.col-1,
+.col-2 {
   display: flex;
+  width: 85%;
   flex-direction: column;
-  position: absolute;
-  width: 40%;
 }
 
-.col-1 a {
+.col-1 a,
+.col-2 a {
   background-color: #fff;
   border-radius: 2rem;
   margin: 0.7rem;
   height: 2.5rem;
-  text-align: left;
-  max-width: 32rem;
   font-size: 0.9rem;
   box-shadow: 0px 9px 17px -11px rgba(0, 0, 0, 0.1);
+}
+
+.col-1 a:last-child {
+  margin-bottom: 2.1rem;
 }
 
 /* .globe,
