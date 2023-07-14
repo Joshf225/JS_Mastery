@@ -9,14 +9,122 @@
   </head>
   <body>
     <header>
-      <div>Hi</div>
-      <div>Icons</div>
+      <div class="top-container">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+          class="profile-pic"
+        />
+        <div class="bio">
+          <h3 class="name">John Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+            hic.
+          </p>
+        </div>
+      </div>
+      <div class="icons">
+        <span>
+          <a href="https://www.linkedin.com">
+            <svg
+              id="1"
+              width="20"
+              height="20"
+              class="linkedin"
+              fill="#0d22c5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.82 1.5H3.294c-.957 0-1.794.69-1.794 1.635v17.566c0 .951.837 1.799 1.794 1.799h17.521c.963 0 1.685-.854 1.685-1.8V3.136c.006-.946-.722-1.635-1.68-1.635ZM8.01 19.005H5V9.65h3.01v9.354ZM6.61 8.228h-.022c-.963 0-1.586-.716-1.586-1.613C5.002 5.7 5.642 5 6.626 5c.984 0 1.587.695 1.608 1.614 0 .897-.624 1.613-1.625 1.613Zm12.395 10.777h-3.009V13.89c0-1.225-.438-2.063-1.526-2.063-.832 0-1.324.563-1.543 1.111-.082.197-.104.465-.104.739v5.328H9.815V9.65h3.008v1.301c.438-.623 1.122-1.52 2.713-1.52 1.975 0 3.469 1.301 3.469 4.108v5.465Z"
+              ></path>
+            </svg>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.stackoverflow.com">
+            <svg
+              id="1"
+              width="20"
+              height="20"
+              class="stack-overflow"
+              fill="#e3a435"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.375 20.625V15h1.875v7.5H3V15h1.875v5.625h13.5Z"
+              ></path>
+              <path
+                d="m6.99 14.474 9.307 1.915.394-1.843-9.308-1.915-.394 1.843Zm1.23-4.365 8.618 3.954.787-1.7-8.617-3.976-.788 1.722Zm2.389-4.172 7.312 5.99 1.207-1.431-7.313-5.99-1.206 1.43ZM15.375 1.5 13.81 2.616l5.663 7.517L21 9l-5.625-7.5ZM6.75 18.75h9.563v-1.875H6.75v1.875Z"
+              ></path>
+            </svg>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.twitter.com">
+            <svg
+              id="1"
+              width="20"
+              height="20"
+              class="globw"
+              fill="#567ae6"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"
+              ></path>
+            </svg>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com">
+            <svg
+              id="1"
+              width="20"
+              height="20"
+              fill="#d556e6"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.375 3.25a4.388 4.388 0 0 1 4.375 4.375v8.75a4.388 4.388 0 0 1-4.375 4.375h-8.75a4.389 4.389 0 0 1-4.375-4.375v-8.75A4.388 4.388 0 0 1 7.625 3.25h8.75Zm0-1.75h-8.75C4.256 1.5 1.5 4.256 1.5 7.625v8.75c0 3.369 2.756 6.125 6.125 6.125h8.75c3.369 0 6.125-2.756 6.125-6.125v-8.75c0-3.369-2.756-6.125-6.125-6.125Z"
+              ></path>
+              <path
+                d="M17.688 7.625a1.313 1.313 0 1 1 0-2.625 1.313 1.313 0 0 1 0 2.625Z"
+              ></path>
+              <path
+                d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm0-1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Z"
+              ></path>
+            </svg>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com">
+            <svg
+              id="1"
+              width="20"
+              height="20"
+              fill="#162ee9"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22.5 12.063c0-5.799-4.702-10.5-10.5-10.5s-10.5 4.7-10.5 10.5c0 5.24 3.84 9.584 8.86 10.373v-7.337H7.692v-3.037h2.666V9.75c0-2.63 1.568-4.085 3.966-4.085 1.15 0 2.351.205 2.351.205v2.584h-1.324c-1.304 0-1.712.81-1.712 1.64v1.97h2.912l-.465 3.036H13.64v7.337c5.02-.788 8.859-5.131 8.859-10.373Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </span>
+      </div>
     </header>
     <main>
       <div class="link-container">
         <div class="col-1">
           <h4>Freelance Work</h4>
-          <a
+          <a href="#"
             ><span
               ><svg
                 id="1"
@@ -40,7 +148,7 @@
             </span>
             Portfolio Site</a
           >
-          <a
+          <a href="https://www.facebook.com"
             ><span>
               <svg
                 id="1"
@@ -61,7 +169,7 @@
               </svg> </span
             >Findedf das</a
           >
-          <a
+          <a href="https://www.twitter.com"
             ><span>
               <svg
                 id="1"
@@ -85,25 +193,108 @@
           >
         </div>
         <div class="col-2">
-          <h4>Learn...</h4>
-          <a>Portfolio Site</a>
-          <a>Findedf das</a>
-          <a>asdasda</a>
+          <h4>Learn Web Development</h4>
+          <a href="#">
+            <span>
+              <svg
+                id="1"
+                width="14"
+                height="14"
+                class="globw"
+                fill="none"
+                stroke="#0a07bb"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+            </span>
+            TEXT</a
+          >
+          <a href="#">
+            <span>
+              <svg
+                id="1"
+                width="14"
+                height="14"
+                class="globw"
+                fill="none"
+                stroke="#0a07bb"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+            </span>
+            TEXT</a
+          >
+          <a href="#">
+            <span>
+              <svg
+                id="1"
+                width="14"
+                height="14"
+                class="globw"
+                fill="none"
+                stroke="#0a07bb"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+            </span>
+            TEXT</a
+          >
+        </div>
+        <div class="col-3">
+          <h4>Support Me</h4>
+          <div>
+            <span href="#"
+              ><svg
+                id="1"
+                width="14"
+                height="14"
+                class="globw"
+                fill="none"
+                stroke="#0a07bb"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                ></path>
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+            </span>
+            Support Me
+          </div>
         </div>
       </div>
     </main>
-
-    <!-- <div class="col-2">
-        <h4>Learn...</h4>
-        <div>Portfolio Site</div>
-        <div>Findedf das</div>
-        <div>asdasda</div>
-      </div>
-      <div class="col-3">
-        <h4>Support Me...</h4>
-        <div>Portfolio Site</div>
-        <div>Findedf das</div>
-        <div>asdasda</div>
-      </div> -->
   </body>
 </html>

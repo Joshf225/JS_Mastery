@@ -21,6 +21,7 @@ header {
   min-height: 10rem;
   margin-bottom: 3rem;
   background-color: aliceblue;
+  padding-bottom: 2rem;
 }
 
 main {
@@ -33,6 +34,33 @@ h4 {
   color: white;
   align-items: flex-start;
   margin-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.top-container {
+  display: flex;
+  max-width: 50%;
+  margin-top: 2rem;
+}
+
+.bio h3 {
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-pic {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  margin-top: 1rem;
 }
 
 .link-container {
@@ -41,14 +69,30 @@ h4 {
   width: 40%;
   height: 70vh;
   align-items: center;
-  border: 2px solid black;
   position: relative;
 }
 
+.link-container .col-1 a,
+.link-container .col-2 a,
+.link-container .col-3 div {
+  font-family: "Roboto Slab", serif;
+}
+
+.col-1 a:hover,
+.col-2 a:hover,
+.col-3 div:hover,
+.icons span:hover {
+  scale: 1.1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .col-1,
-.col-2 {
+.col-2,
+.col-3 {
   display: flex;
-  width: 85%;
+  width: 80%;
+  min-width: 19rem;
   flex-direction: column;
 }
 
@@ -58,17 +102,54 @@ h4 {
   border-radius: 2rem;
   margin: 0.7rem;
   height: 2.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  box-shadow: 0px 9px 17px -11px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+}
+
+.col-1 a:last-child {
+  margin-bottom: 1.8rem;
+}
+.col-2 a:last-child {
+  margin-bottom: 1.8rem;
+}
+
+.col-1 a span {
+  padding-right: 0.7rem;
+  padding-left: 0.6rem;
+}
+
+.col-1 a {
+  padding-top: 0.4rem;
+}
+
+.col-2 a,
+.col-3 div {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.col-2 a span {
+  padding-right: 0.5rem;
+}
+
+.col-3 div {
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 0.7rem;
+  height: 2.5rem;
+  text-align: left;
   font-size: 0.9rem;
   box-shadow: 0px 9px 17px -11px rgba(0, 0, 0, 0.1);
 }
 
-.col-1 a:last-child {
-  margin-bottom: 2.1rem;
+.col-3 div {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-/* .globe,
-.facebook,
-.github {
-  position: absolute;
-  left: 2rem;
-} */
+.col-3 div span {
+  padding-right: 0.5rem;
+}
