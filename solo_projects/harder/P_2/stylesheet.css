@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  padding: 2rem;
+}
+
+container {
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  height: 40%;
+  padding: 1rem;
+}
+
+img {
+  height: 22rem;
+  width: 15rem;
+  border-radius: 0.7rem;
+}
+
+form {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 20rem;
+  font-size: 0.8rem;
+}
+form h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+input,
+button {
+  width: 85%;
+}
