@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>URL Shrinker</h1>
+    <form action="/shortURL" method="POST">
+      <label for="fullURL">URL</label>
+      <input type="url" name="fullURL" id="fullURL" />
+      <button type="submit">Shrink</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Full URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+        </tr>
+      </thead>
+      <tbody>
+       * <% shortURLs.forEach(shortURL => { %>
+        <tr>
+          <td>
+          *  <a href="<%= shortURL.full %>"><%= shortURL.full %></a>
+          </td>
+          <td>
+          *  <a href="<%= shortURL.short %>"><%= shortURL.short %></a>
+          </td>
+          *<td><%= shortURL.clicks %></td>
+        </tr>
+        *<% }) %>
+      </tbody>
+    </table>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortner</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <h2>Mini Link It!</h2>
+        <div class="inside-container">
+          <form action="/shortURL" method="POST">
+            <div class="inner-con">
+              <div class="long-url">
+                <h3 for="input">Enter Your Long URL</h3>
+                <input type="url" name="fullURL" id="fullURL" />
+              </div>
+              <div class="additional-option">
+                <h3 for="">Your mini URL</h3>
+                <div class="new-link">
+                  <span>minilinkit.com/</span>
+                </div>
+              </div>
+              <button class="generate" type="submit" id="gen-btn">
+                Mini Link It
+              </button>
+              <div class="copy-new-url" id="copy-new-url"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
