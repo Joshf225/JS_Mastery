@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="./index.js" defer></script>
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -31,21 +32,85 @@
   <body>
     <!-- Sign-up form start -->
     <main>
-      <container>
-        <form action="#">
-          <h1>Stay updated!</h1>
-          <p>
-            Join 60,000+ product managers receiving monthly <br />
-            updates on:
-          </p>
-          <p>- Product discovery and building what matters</p>
-          <p>- Measuring to ensure updates are a success</p>
-          <p>- And much more!</p>
-
-          <label for="">Email address</label>
-          <input type="url" placeholder="email@company.com" />
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
+      <container class="">
+        <div class="form">
+          <form action="submit" class="form-content" id="form">
+            <h1>Stay updated!</h1>
+            <p class="first-p">
+              Join 60,000+ product managers receiving monthly <br />
+              updates on:
+            </p>
+            <div class="grouped-p">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;Product discovery and building what matters
+              </p>
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;Measuring to ensure updates are a success
+              </p>
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;And much more!
+              </p>
+            </div>
+            <div class="button">
+              <label for="">Email address</label>
+              <input
+                type="text"
+                placeholder="email@company.com"
+                required="required"
+                id="input"
+                value=""
+              />
+              <button type="submit" id="submit-btn">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </form>
+        </div>
         <img src="./assets/images/patterns.png" alt="" />
         <!-- Sign-up form end -->
       </container>
