@@ -17,6 +17,10 @@ form.addEventListener("submit", (e) => {
     container.classList.toggle("none");
     completeCard.classList.toggle("none");
     emailEl.innerText = `${input.value}`;
+    validation.style.opacity = 0;
+    input.style.backgroundColor = "hsl(0, 0%, 100%)";
+    input.style.color = "hsl(231, 7%, 60%)";
+    input.style.borderColor = "hsl(231, 7%, 60%)";
   } else {
     // alert("invalid");
     // validation.classList.toggle("none");
