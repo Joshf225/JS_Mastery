@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="./index.js" defer></script>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <main>
+      <container class="">
+        <div class="form">
+          <form id="form">
+            <h1>Stay updated!</h1>
+            <p class="first-p">
+              Join 60,000+ product managers receiving monthly <br />
+              updates on:
+            </p>
+            <div class="grouped-p">
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;Product discovery and building what matters
+              </p>
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;Measuring to ensure updates are a success
+              </p>
+              <p>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 21 21"
+                  >
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g></svg></span
+                >&emsp;And much more!
+              </p>
+            </div>
+            <div class="button">
+              <div class="validation">
+                <label for="">Email address</label>
+                <span class="invalid-class" id="invalid"
+                  >Valid email required</span
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="email@company.com"
+                id="input"
+                autocomplete="off"
+                class="input"
+              />
+              <button type="submit" id="submit-btn">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </form>
+        </div>
+        <img src="./assets/images/patterns.png" alt="" />
+        <!-- Sign-up form end -->
+      </container>
+
+      <!-- Success message start -->
+
+      <div class="card" id="card">
+        <div class="inner-container">
+          <div class="last-con">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 64 64"
+            >
+              <defs>
+                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF6A3A" />
+                  <stop offset="100%" stop-color="#FF527B" />
+                </linearGradient>
+              </defs>
+              <g fill="none">
+                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                />
+              </g>
+            </svg>
+            <h2>Thanks for subscribing!</h2>
+            <p>
+              A confirmation email has been sent to
+              <span class="bold" id="email"></span>. Please open it and click
+              the button inside to confirm your subscription.
+            </p>
+            <button id="dismiss">Dismiss message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success message end -->
+    </main>
+
+    <!-- <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Joshua Famose</a>.
+    </footer> -->
+  </body>
+</html>

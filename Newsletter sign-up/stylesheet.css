@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(234, 29%, 20%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+container {
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 38rem;
+  height: 25rem;
+  padding: 1rem;
+  gap: 1rem;
+  -webkit-box-shadow: -1.5px 0.5px 10px -3px #000000;
+  -moz-box-shadow: -1.5px 0.5px 10px -3px #000000;
+  box-shadow: -1.5px 0.5px 10px -3px #000000;
+}
+
+/* ============================================================ */
+
+main .card {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  margin-top: 7rem;
+  background-color: hsl(0, 0%, 100%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+main .card .none {
+  display: none;
+}
+
+main .inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+main .last-con {
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  width: 16rem;
+}
+
+main .last-con button {
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 550;
+}
+
+main .last-con button:hover {
+  background: #ff5858;
+  background: -webkit-linear-gradient(276deg, #ff5858 0%, #f857a6 100%);
+  background: linear-gradient(276deg, #ff5858 0%, #f857a6 100%);
+  -webkit-box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+  -moz-box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+  box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+}
+
+main .last-con p .bold {
+  font-weight: bold;
+}
+
+.card .inner-container svg {
+  margin-bottom: 1rem;
+}
+
+main .last-con h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+main .last-con p {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* ====================================== */
+
+.container .none {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+img {
+  height: 100%;
+  width: 40%;
+  border-radius: 0.7rem;
+  margin-right: 0;
+}
+
+form {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 20rem;
+  margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  color: hsl(234, 29%, 20%);
+  margin-left: 1.5rem;
+  /*justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+   */
+  font-size: 0.8rem;
+}
+form h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.3rem;
+  font-weight: bold;
+  color: hsl(234, 29%, 20%);
+}
+
+input,
+button {
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 0.3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .first-p {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+form .grouped-p {
+  font-size: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+form .grouped-p p {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0.2rem;
+}
+
+form .button {
+  margin-top: 0.5rem;
+}
+
+form .button label {
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: hsl(234, 29%, 20%);
+  /* margin-right: 7.5rem; */
+}
+
+form .button .invalid-class {
+  font-size: 0.55rem;
+  font-weight: bold;
+  color: hsl(4, 100%, 67%);
+  opacity: 0;
+}
+
+/* form .button .invalid-class .none {
+  opacity: 0;
+} */
+
+form .button .validation {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .button .input {
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(231, 7%, 60%);
+  cursor: pointer;
+}
+
+form .button input:focus {
+  color: hsl(234, 29%, 20%);
+}
+
+form .button button {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  cursor: pointer;
+}
+
+form .button button:hover {
+  background: #ff5858;
+  background: -webkit-linear-gradient(276deg, #ff5858 0%, #f857a6 100%);
+  background: linear-gradient(276deg, #ff5858 0%, #f857a6 100%);
+  -webkit-box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+  -moz-box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+  box-shadow: 2.5px 3px 11.5px -1.5px #ff476a;
+}
