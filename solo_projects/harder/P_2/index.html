@@ -34,7 +34,7 @@
     <main>
       <container class="">
         <div class="form">
-          <form action="submit" class="form-content" id="form">
+          <form id="form">
             <h1>Stay updated!</h1>
             <p class="first-p">
               Join 60,000+ product managers receiving monthly <br />
@@ -97,13 +97,18 @@
               </p>
             </div>
             <div class="button">
-              <label for="">Email address</label>
+              <div class="validation">
+                <label for="">Email address</label>
+                <span class="invalid-class" id="invalid"
+                  >Valid email required</span
+                >
+              </div>
               <input
                 type="text"
                 placeholder="email@company.com"
-                required="required"
                 id="input"
-                value=""
+                autocomplete="off"
+                class="input"
               />
               <button type="submit" id="submit-btn">
                 Subscribe to monthly newsletter
@@ -114,15 +119,46 @@
         <img src="./assets/images/patterns.png" alt="" />
         <!-- Sign-up form end -->
       </container>
+
+      <!-- Success message start -->
+
+      <div class="card" id="card">
+        <div class="inner-container">
+          <div class="last-con">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 64 64"
+            >
+              <defs>
+                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF6A3A" />
+                  <stop offset="100%" stop-color="#FF527B" />
+                </linearGradient>
+              </defs>
+              <g fill="none">
+                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                />
+              </g>
+            </svg>
+            <h2>Thanks for subscribing!</h2>
+            <p>
+              A confirmation email has been sent to
+              <span class="bold" id="email"></span>. Please open it and click
+              the button inside to confirm your subscription.
+            </p>
+            <button id="dismiss">Dismiss message</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success message end -->
     </main>
-
-    <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    <!-- Success message end -->
 
     <!-- <footer class="attribution">
       Challenge by
