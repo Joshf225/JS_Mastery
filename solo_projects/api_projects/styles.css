@@ -32,6 +32,7 @@ main {
   overflow: hidden;
   border-radius: 5px;
   transition: 0.3s ease-out;
+  overflow: visible;
 }
 
 .movie .none {
@@ -65,13 +66,20 @@ main .overview {
   background-color: aliceblue;
   border-radius: 5px;
   padding: 1rem;
+  position: absolute;
+  z-index: 1;
 }
+
+main .overview:hover {
+}
+
 main .overview h3 {
   font-size: inherit;
   font-weight: lighter;
 }
 
-main .movie .movie-info .click-overview .none {
+.click-overview {
+  background-color: aqua;
 }
 
 /* main .movie {
