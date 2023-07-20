@@ -8,7 +8,25 @@ const SEARCHAPI =
 
 const main = document.querySelector("main");
 
+const movie = document.getElementsByClassName("movie");
+
+const clickOverview = document.getElementsByClassName("click-overview");
+
 addToSite();
+// async function showAPI() {
+//   const data = await logMovies();
+//   const movieEl = document.createElement("div");
+//   movieEl.classList.add("overview");
+//   movieEl.innerHTML = `
+//           <h3 class=""><b>Title:</b> ${data["results"][0].title}</h3>
+//           <p class="popularity"><b>Popularity:</b> ${data["results"][0].popularity}</p>
+//           <p class="release_date"><b>Release date:</b> ${data["results"][0].release_date}</p>
+//           <p class="overview-p"><b>Overview:</b> ${data["results"][0].overview}</p>
+//     `;
+//   main.appendChild(movieEl);
+// }
+
+// showAPI();
 
 async function logMovies() {
   const response = await fetch(APIURL);
@@ -35,10 +53,30 @@ async function addToSite() {
         />
         <div class="movie-info">
           <h3 class="title">${movie.title}</h3>
+          <div class = "click-overview none">
+            <h3 class=""><b>Title:</b> ${movie.title}</h3>
+            <p class="popularity"><b>Popularity:</b> ${movie.popularity}</p>
+            <p class="release_date"><b>Release date:</b> ${movie.release_date}</p>
+            <p class="overview-p"><b>Overview:</b> ${movie.overview}</p>
+          </div>
         </div>
     `;
     main.appendChild(movies);
     movies.addEventListener("click", () => {
+      // alert();
+      main.style.filter = "brightness(0.5)";
+      main.style.transition = "0.4s";
+      clickOverview.classList.toggle("none");
+      // const data = await logMovies();
+      // const movieEl = document.createElement("div");
+      // movieEl.classList.add("overview");
+      // movieEl.innerHTML = `
+      //         <h3 class=""><b>Title:</b> ${data["results"][0].title}</h3>
+      //         <p class="popularity"><b>Popularity:</b> ${data["results"][0].popularity}</p>
+      //         <p class="release_date"><b>Release date:</b> ${data["results"][0].release_date}</p>
+      //         <p class="overview-p"><b>Overview:</b> ${data["results"][0].overview}</p>
+      //   `;
+      // main.appendChild(movieEl);
       // movies.classList.toggle("none");
       // exit.addEventListener("click", () => {
       //   movies.innerHTML = `

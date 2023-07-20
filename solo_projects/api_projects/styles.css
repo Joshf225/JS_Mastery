@@ -18,13 +18,15 @@ main {
   background-color: aquamarine;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  /* filter: brightness(0.5); */
 }
 
 .movie {
-  width: 15rem;
+  width: 10rem;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: rgb(69, 18, 170);
   position: relative;
   overflow: hidden;
@@ -32,8 +34,8 @@ main {
   transition: 0.3s ease-out;
 }
 
-.movie.none {
-  opacity: 0;
+.movie .none {
+  display: none;
 }
 
 .movie:hover {
@@ -52,6 +54,24 @@ main {
   justify-content: space-between;
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
+}
+
+main .overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  gap: 1rem;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 1rem;
+}
+main .overview h3 {
+  font-size: inherit;
+  font-weight: lighter;
+}
+
+main .movie .movie-info .click-overview .none {
 }
 
 /* main .movie {
