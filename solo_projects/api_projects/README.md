@@ -1,0 +1,2 @@
+- design from : https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193
+- API = https://developer.themoviedb.org/reference/search-movie (I was provided with api key)
