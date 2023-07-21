@@ -10,12 +10,35 @@ body {
 }
 
 header {
-  background-color: bisque;
+  background-color: #373b69;
   height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: rgb(16, 136, 195);
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header input {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  border: 1px solid #373b69;
+  background-color: #312d48;
+  height: 2rem;
+  width: 13rem;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  outline: none;
 }
 
 main {
-  background-color: aquamarine;
+  background-color: #312d48;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,13 +49,16 @@ main {
   width: 10rem;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem;
-  background-color: rgb(69, 18, 170);
+  margin: 0.8rem;
+  background-color: #373b69;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
   transition: 0.3s ease-out;
   overflow: visible;
+  -webkit-box-shadow: 0 4px 9.5px 1px #5f5959;
+  -moz-box-shadow: 0 4px 9.5px 1px #5f5959;
+  box-shadow: 0 4px 9.5px 1px #050505;
 }
 
 .movie .none {
