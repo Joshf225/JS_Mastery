@@ -46,7 +46,7 @@ Projects are made in vanilla JS, HTML and CSS
 
 7. GitHub Profiles App
 
-- https://uidesigndaily.com/posts/photoshop-profi1e-card-user-day-286
+- https://uidesigndaily.com/posts/photoshop-profile-card-user-day-286
 - search for user
 - get and show data
 
