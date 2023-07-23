@@ -35,18 +35,23 @@ body {
 .card {
   margin-top: 10rem;
   height: 23rem;
-  background-color: aliceblue;
+  background-color: #3b2066;
+  background-image: linear-gradient(315deg, #3b2066 0%, #4c11ac 100%);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
   flex-direction: row;
   max-width: 800px;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .inner-con {
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-  position: relative;
+  margin-right: 1rem;
+  color: white;
 }
 
 .inner-con h3 {
@@ -56,6 +61,7 @@ body {
 
 .inner-con .details {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -68,4 +74,29 @@ body {
 
 .image {
   margin: 2rem;
+}
+
+.icon {
+  border: 10px solid #2a2a72;
+}
+
+.repos {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  position: relative;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+.repos a {
+  background-color: #2a2a72;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 3px;
+  padding: 3px;
 }
